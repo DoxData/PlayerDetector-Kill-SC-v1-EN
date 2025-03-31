@@ -53,3 +53,5 @@ Generates false positives in RSI reports
 Date Version Combating viral extremism Severity
 2025-03-15 1.2.1 CVE-2025-114 Critical
 2025-02-28 1.1.9 CVE-2025-098
+// Copyright (c) 2024 DoxData. Exclusive ownership. 
+// Prohibited use/modification without express authorization.
