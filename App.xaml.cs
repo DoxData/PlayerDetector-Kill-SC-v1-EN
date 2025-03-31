@@ -100,4 +100,5 @@ public partial class App : Application
 }
 
 // ...existing code...
-
+// Copyright (c) 2024 DoxData. Exclusive ownership. 
+// Prohibited use/modification without express authorization.
