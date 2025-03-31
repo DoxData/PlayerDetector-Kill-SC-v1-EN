@@ -2,19 +2,17 @@
 Hello, citizens of the verse!  
 Introducing 🎮 **PlayerDetector Kill SC - FAQ**
 the ultimate tool to monitor your Star Citizen experience and stay one step ahead.  
-![Clip](https://github.com/user-attachments/assets/1ab314f6-f128-4ab1-8a60-73c273cea824)
-
 <div align="center">
   <img src="https://github.com/user-attachments/assets/1ab314f6-f128-4ab1-8a60-73c273cea824" alt="App_DoxData">
 </div>
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/33299c02-0f43-43f2-b684-87fe425f52ec" alt="App_DoxData">
+</div>
 
-
-
-
-
-
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7466e142-069b-4b5c-ab49-f966897e663b" alt="App_DoxData">
+</div>
 ---
 
 ```
