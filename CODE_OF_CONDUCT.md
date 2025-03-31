@@ -65,3 +65,5 @@ This code adapts [Contributor Covenant 2.1](https://www.contributor-covenant.org
 - Spectrum API-compatible reporting system
 - Specific clauses for SC telemetry data
 ```
+// Copyright (c) 2024 DoxData. Exclusive ownership. 
+// Prohibited use/modification without express authorization.
