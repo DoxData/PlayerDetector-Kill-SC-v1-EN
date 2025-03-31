@@ -111,3 +111,5 @@ ERRORS IN LOGS? → Check the game's installation path
 `
 See you in the Verse, citizens! _ 🚀   
 **- DoxData | By David**
+// Copyright (c) 2024 DoxData. Exclusive ownership. 
+// Prohibited use/modification without express authorization.
