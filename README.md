@@ -13,7 +13,7 @@ the ultimate tool to monitor your Star Citizen experience and stay one step ahea
 <div align="center">
   <img src="https://github.com/user-attachments/assets/7466e142-069b-4b5c-ab49-f966897e663b" alt="App_DoxData">
 </div>
----
+
 
 ```
 🎮 **PLAYERDETECTOR KILL SC - TECHNICAL ASSISTANCE** 🛠️
