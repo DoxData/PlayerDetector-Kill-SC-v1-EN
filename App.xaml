@@ -1,0 +1,44 @@
+﻿<Application x:Class="PlayerDetector-Kill-SC-v1-EN.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PlayerDetector-Kill-SC-v1-EN">
+    <Application.Resources>
+        <!-- Asegurarse de que no haya configuraciones adicionales que puedan causar la apertura de múltiples ventanas -->
+        <Style x:Key="ModeButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF0093B5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Width" Value="70"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="True">
+                    <Setter Property="Background" Value="LimeGreen"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="ActionButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF0283A4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Width" Value="110"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF0093B5"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Add Carculator font resource (ensure Carculator.ttf is in Fonts folder) -->
+        <FontFamily x:Key="CalculatorFont">pack://application:,,,/PlayerDetector-Kill-SC-v1-EN;component/Fonts/#Carculator</FontFamily>
+
+        <!-- Global style for OCR A Extended font -->
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="OCR A Extended"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="OCR A Extended"/>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,39 @@
+To report a player in Star Citizen, you have two main options:
+
+1️ In-game:
+If the user is committing a real-time violation, you can report it in-game using the reporting system:
+1. Open the global chat (F12 to open it if it's hidden)
+2. Type /report [username] [reason] and send the message
+Example:
+/report Player123 Chat Harassment
+
+2️ Via a support ticket:
+If the issue is more serious (cheating, persistent harassment, toxic behavior, etc.), you should submit a ticket on the RSI support website: Clicking the REPORT button in the app will link you directly to the support website.
+
+The most appropriate ticket type is Gameplay Issues, as this is an in-game issue. In the ticket, please include:
+- Name of the offending player
+- Date and time of the incident
+- Description of the issue
+- Screenshots or videos as evidence (if possible)
+
+If it's something very serious, such as cheating or bug exploitation, you can also report it on:
+- The official forums
+- The official Star Citizen Discord
+
+Useful links related to Star Citizen:
+
+1. [Star Citizen Wiki](https://starcitizen.tools/Community_Links): A comprehensive source of information about the game, including guides and community links.
+
+2. [Star Citizen Tools](https://starcitizen.today/helpfullinks/): A specialized wiki offering tools and information about the Star Citizen universe.
+
+3. [Starship 42](https://starcitizen.today/helpfullinks/): Explore and manage your fleet of ships with interactive tools.
+
+4. [Erkul Games](https://starcitizen.today/helpfullinks/): Optimize your ship configurations and experiment with different equipment.
+
+5. [SC Trade Tools](https://www.reddit.com/r/starcitizen/comments/18pvjes/list_of_useful_star_citizen_links_now_with_a/): Tools for in-game trading.
+
+6. [Galactic Logistics](https://www.reddit.com/r/starcitizen/comments/18pvjes/list_of_useful_star_citizen_links_now_with_a/): Information on trade routes and mining.
+
+7. [RSI Main Page](https://www.reddit.com/r/starcitizen/comments/18pvjes/list_of_useful_star_citizen_links_now_with_a/): Official Roberts Space Industries page for news and updates.
+
+I hope you find these links useful for your adventure in the Star Citizen universe.🚀

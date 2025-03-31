@@ -1,0 +1,10 @@
+{
+    "RAMAlert": {
+        "Threshold": 90,
+        "Cooldown": 300000
+    },
+    "PVPDeathAlert": {
+        "Enabled": true,
+        "Sound": "alert.wav"
+    }
+}
