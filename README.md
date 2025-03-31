@@ -86,8 +86,6 @@ ERRORS IN LOGS? → Check the game's installation path
 ---
 📥 **Download**: [PlayerDetector_Kill_SC v1.0](ENLACE)
 
-📜 **Visible code**: [GitHub repository]
-
 ---
 **Questions? ** Meet me in the global chat or report issues on GitHub!  
 
