@@ -37,3 +37,5 @@ Useful links related to Star Citizen:
 7. [RSI Main Page](https://www.reddit.com/r/starcitizen/comments/18pvjes/list_of_useful_star_citizen_links_now_with_a/): Official Roberts Space Industries page for news and updates.
 
 I hope you find these links useful for your adventure in the Star Citizen universe.🚀
+// Copyright (c) 2024 DoxData. Exclusive ownership. 
+// Prohibited use/modification without express authorization.
