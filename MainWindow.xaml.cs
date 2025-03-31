@@ -760,52 +760,15 @@ public partial class MainWindow : Window
 
         if (errorLine.Contains("[FLOW]"))
         {
-            details = $"Type: FLOW\n\n" +
-                      $"Meaning:\n" +
-                      $"Represents information about the system execution flow or event logic. It is not an error as such, but an informative record to understand the behavior of the program.\n\n" +
-                      $"Purpose:\n" +
-                      $"Helps track which processes or methods have been executed and in what order.\n" +
-                      $"Useful for debugging when trying to play specific scenarios.\n\n" +
-                      $"Sample content:\n" +
-                      $"<2025-03-21T10:12:30.123Z> [FLOW] StartMission: ID=12345, Name=\"RescueOp1\"\n" +
-                      $"Description: Indicates that you have started a mission with a specific ID and name.\n\n" +
-                      $"Suggested action:\n" +
-                      $"Analyze the program flow when an error occurs to identify relevant steps before failure.\n\n" +
-                      $"Original message: n{errorLine}";
+            details =
         }
         else if (errorLine.Contains("[ERROR]"))
         {
-            details = $"Type: ERROR\n\n" +
-                      $"Meaning:\n" +
-                      $"Represents a critical issue that disrupts normal system or game operation.\n" +
-                      $"These events often require immediate attention, as they can prevent the user from continuing.\n\n" +
-                      $"Purpose:\n" +
-                      $"Identify serious faults or technical problems.\n" +
-                      $"May involve errors such as connection failures, data loss, logic errors, etc.\n\n" +
-                      $"Sample content:\n" +
-                      $"<2025-03-21T10:13:45.567Z> [ERROR] ConnectionLost: Server=\"EU_Stanton_1\", PingTimeout=3000ms\n" +
-                      $"Description: Indicates that the connection to the server was lost due to a timeout exceeded.\n\n" +
-                      $"Suggested action:\n" +
-                      $"Analyze these errors as a priority.\n" +
-                      $"Includes an in-app notification system to alert the user or developers.\n\n" +
-                      $"Original message:\n{errorLine}";
+          
         }
         else if (errorLine.Contains("[WARNING]"))
         {
-            details = $"Type: WARNING\n\n" +
-                      $"Meaning:\n" +
-                      $"Represents situations that are not critical, but could become problems if left unresolved.\n" +
-                      $"These are warnings about unusual behavior that could affect system performance or stability.\n\n" +
-                      $"Purpose:\n" +
-                      $"Prevent future problems.\n" +
-                      $"Help developers identify areas of improvement or risk.\n\n" +
-                      $"Sample content:\n" +
-                      $"<2025-03-21T10:14:20.456Z> [WARNING] HighMemoryUsage: ProcessID=1234, Usage=85%\n" +
-                      $"Description: Indicates that a process is using an unusually high amount of memory.\n\n" +
-                      $"Suggested action:\n" +
-                      $"Monitors these messages to prevent them from evolving into a critical error.\n" +
-                      $"Records its frequency to analyze trends.\n\n" +
-                      $"Original message:\n{errorLine}";
+           
         }
 
         return details;
@@ -941,7 +904,7 @@ public partial class MainWindow : Window
 
     private void DonateButton_Click(object sender, RoutedEventArgs e)
     {
-        var url = "https://www.paypal.com/donate/?hosted_button_id=8HWG76UGK7ARJ";
+        var url = "";
         try
         {
             Process.Start(new ProcessStartInfo
@@ -1062,3 +1025,5 @@ I hope you find these links useful for your adventure in the Star Citizen univer
         // Deshabilitar aquí las funciones que requieren permisos de administrador
     }
 }
+// Copyright (c) 2024 DoxData. Exclusive ownership. 
+// Prohibited use/modification without express authorization.
