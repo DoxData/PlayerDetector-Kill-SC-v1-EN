@@ -84,7 +84,7 @@ ERRORS IN LOGS? → Check the game's installation path
 - **Log Auto-Detector**: Automatically finds LIVE/PTU Game.log files.
 
 ---
-📥 **Download**: [PlayerDetector_Kill_SC v1.0](ENLACE)
+📥 **Download**: [PlayerDetector_Kill_SC v1.0](https://github.com/DoxData/PlayerDetector-Kill-SC-v1-EN/releases/download/PlayerDetector-Kill-SC-v1-EN/PlayerDetector-Kill-SC-v1-EN.zip)
 
 ---
 **Questions? ** Meet me in the global chat or report issues on GitHub!  
