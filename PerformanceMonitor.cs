@@ -160,10 +160,10 @@ namespace PlayerDetector-Kill-SC-v1-EN
                 float availableBytes = availableCounter.NextValue();
                 float totalBytes = GetTotalPhysicalMemory();
 
-                // Validar que los valores de memoria sean v·lidos
+                // Validar que los valores de memoria sean v√°lidos
                 if (totalBytes <= 0)
                 {
-                    // Intentar mÈtodo alternativo directo con GlobalMemoryStatusEx
+                    // Intentar m√©todo alternativo directo con GlobalMemoryStatusEx
                     var memoryStatus = new NativeMemoryStatus();
                     if (GetMemoryStatusWithNative(ref memoryStatus))
                     {
@@ -172,8 +172,8 @@ namespace PlayerDetector-Kill-SC-v1-EN
                     }
                     else
                     {
-                        Debug.WriteLine("Error: No se pudo obtener informaciÛn de memoria con mÈtodos alternativos");
-                        return "N/A GB"; // Formato de error m·s claro
+                        Debug.WriteLine("Error: No se pudo obtener informaci√≥n de memoria con m√©todos alternativos");
+                        return "N/A GB"; // Formato de error m√°s claro
                     }
                 }
 
@@ -182,7 +182,7 @@ namespace PlayerDetector-Kill-SC-v1-EN
                 float totalGB = totalBytes / (1024 * 1024 * 1024);
                 float usedGB = totalGB - availableGB;
 
-                // ValidaciÛn adicional para evitar valores negativos o inconsistentes
+                // Validaci√≥n adicional para evitar valores negativos o inconsistentes
                 if (usedGB < 0 || usedGB > totalGB)
                 {
                     Debug.WriteLine($"Valores de memoria inconsistentes: usado={usedGB}, total={totalGB}");
@@ -196,7 +196,7 @@ namespace PlayerDetector-Kill-SC-v1-EN
             {
                 Debug.WriteLine($"Error obteniendo uso de RAM: {ex.Message}");
 
-                // Intentar mÈtodo de respaldo con Win32
+                // Intentar m√©todo de respaldo con Win32
                 try
                 {
                     var memoryStatus = new NativeMemoryStatus();
@@ -211,7 +211,7 @@ namespace PlayerDetector-Kill-SC-v1-EN
                 }
                 catch (Exception ex2)
                 {
-                    Debug.WriteLine($"Error en mÈtodo alternativo: {ex2.Message}");
+                    Debug.WriteLine($"Error en m√©todo alternativo: {ex2.Message}");
                 }
 
                 return "N/A GB"; // Formato simplificado para errores
@@ -222,15 +222,15 @@ namespace PlayerDetector-Kill-SC-v1-EN
         {
             try
             {
-                // MÈtodo 1: Win32_PhysicalMemory
+                // M√©todo 1: Win32_PhysicalMemory
                 using var searcher = new ManagementObjectSearcher("SELECT Capacity FROM Win32_PhysicalMemory");
                 var collection = searcher.Get();
 
                 // Verificar si se obtuvieron resultados
                 if (collection.Count == 0)
                 {
-                    Debug.WriteLine("No se encontraron mÛdulos de memoria fÌsica");
-                    // Intentamos mÈtodo alternativo dentro de la misma funciÛn
+                    Debug.WriteLine("No se encontraron m√≥dulos de memoria f√≠sica");
+                    // Intentamos m√©todo alternativo dentro de la misma funci√≥n
                     return GetTotalPhysicalMemoryAlternative();
                 }
 
@@ -240,7 +240,7 @@ namespace PlayerDetector-Kill-SC-v1-EN
 
                 if (totalMemory <= 0)
                 {
-                    Debug.WriteLine("Win32_PhysicalMemory devolviÛ valor inv·lido");
+                    Debug.WriteLine("Win32_PhysicalMemory devolvi√≥ valor inv√°lido");
                     return GetTotalPhysicalMemoryAlternative();
                 }
 
@@ -249,7 +249,7 @@ namespace PlayerDetector-Kill-SC-v1-EN
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"Error obteniendo memoria fÌsica total: {ex.Message}");
+                Debug.WriteLine($"Error obteniendo memoria f√≠sica total: {ex.Message}");
                 return GetTotalPhysicalMemoryAlternative();
             }
         }
@@ -258,15 +258,15 @@ namespace PlayerDetector-Kill-SC-v1-EN
         {
             try
             {
-                // MÈtodo 2: GlobalMemoryStatusEx via P/Invoke
+                // M√©todo 2: GlobalMemoryStatusEx via P/Invoke
                 var memoryStatus = new NativeMemoryStatus();
                 if (GetMemoryStatusWithNative(ref memoryStatus))
                 {
-                    Debug.WriteLine($"Memoria total (mÈtodo alternativo): {memoryStatus.TotalPhys / (1024 * 1024 * 1024):F2} GB");
+                    Debug.WriteLine($"Memoria total (m√©todo alternativo): {memoryStatus.TotalPhys / (1024 * 1024 * 1024):F2} GB");
                     return memoryStatus.TotalPhys;
                 }
 
-                // MÈtodo 3: PerformanceCounter directamente
+                // M√©todo 3: PerformanceCounter directamente
                 using var ramCounter = new PerformanceCounter("Memory", "Commit Limit");
                 var commitLimit = ramCounter.NextValue();
                 Debug.WriteLine($"Commit Limit (PerformanceCounter): {commitLimit / (1024 * 1024 * 1024):F2} GB");
@@ -274,7 +274,7 @@ namespace PlayerDetector-Kill-SC-v1-EN
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"Error en mÈtodo alternativo para obtener memoria fÌsica: {ex.Message}");
+                Debug.WriteLine($"Error en m√©todo alternativo para obtener memoria f√≠sica: {ex.Message}");
                 return 0;
             }
         }
@@ -299,7 +299,7 @@ namespace PlayerDetector-Kill-SC-v1-EN
             }
         }
 
-        // Importar funciÛn nativa
+        // Importar funci√≥n nativa
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool GlobalMemoryStatusEx(ref NativeMemoryStatus lpBuffer);
@@ -340,7 +340,7 @@ namespace PlayerDetector-Kill-SC-v1-EN
         {
             _writer.WriteLine($"[{DateTime.Now:o}] {_operationName} - " +
                              $"Tiempo: {_sw.Elapsed.TotalMilliseconds}ms, " +
-                             $"LÌneas: {linesProcessed}, " +
+                             $"L√≠neas: {linesProcessed}, " +
                              $"Memoria: {GC.GetTotalMemory(false) / 1024}KB");
         }
 
@@ -353,3 +353,5 @@ namespace PlayerDetector-Kill-SC-v1-EN
         }
     }
 }
+// Copyright (c) 2024 DoxData. Exclusive ownership. 
+// Prohibited use/modification without express authorization.
