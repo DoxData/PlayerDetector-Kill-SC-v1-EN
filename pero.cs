@@ -5,3 +5,5 @@ namespace PlayerDetector-Kill-SC-v1-EN
     {
     }
 }
+// Copyright (c) 2024 DoxData. Exclusive ownership. 
+// Prohibited use/modification without express authorization.
